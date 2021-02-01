@@ -73,7 +73,7 @@ public class RegistrationActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
-                intent.setType("images/*");
+                intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(Intent.createChooser(intent, "Select Image"), PICK_IMAGE);
             }
